@@ -50,6 +50,7 @@ permalink: /knowledge/
         <li><a href="{{ '/posts/2026/06/04/requirement-test-analysis-skill-design/' | relative_url }}">需求测试分析 Skill 设计文档</a></li>
         <li><a href="{{ '/posts/2026/06/04/test-strategy-design-skill-design/' | relative_url }}">测试策略设计 Skill 设计文档</a></li>
         <li><a href="{{ '/posts/2026/06/04/test-case-design-skill-design/' | relative_url }}">测试用例设计 Skill 设计文档</a></li>
+        <li><a href="{{ '/posts/2026/06/15/test-case-design-skill-workflow/' | relative_url }}">测试用例设计 Skill 工作流：不要让 AI 直接从需求生成用例</a></li>
         <li><a href="{{ '/posts/2026/06/04/test-case-review-skill-design/' | relative_url }}">测试用例评审 Skill 设计文档</a></li>
         <li><a href="{{ '/posts/2026/06/04/test-asset-consolidation-skill-design/' | relative_url }}">测试资产沉淀与知识库治理 Skill 设计文档</a></li>
         <li><a href="{{ '/posts/2026/06/04/test-knowledge-base-design/' | relative_url }}">测试知识库从 0 搭建与治理设计文档</a></li>
