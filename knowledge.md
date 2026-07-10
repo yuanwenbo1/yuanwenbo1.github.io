@@ -104,6 +104,7 @@ permalink: /knowledge/
       <ul>
         <li><a href="{{ '/posts/2026/06/03/quality-feedback-loop/' | relative_url }}">从测试报告到缺陷复盘：建立质量反馈闭环</a></li>
         <li><a href="{{ '/posts/2026/06/03/collaboration-knowledge-base-for-qa/' | relative_url }}">协作和知识库如何服务质量保障</a></li>
+        <li><a href="{{ '/posts/2026/07/08/test-communication-and-progress-push/' | relative_url }}">测试工程师如何沟通和推进项目</a></li>
         <li><a href="{{ '/posts/2026/06/02/quality-asset/' | relative_url }}">测试资产不是文档仓库，而是可复用的质量能力</a></li>
         <li>用例评审 checklist</li>
         <li>上线质量检查表</li>
