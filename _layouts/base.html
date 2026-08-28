@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
-    <meta name="description" content="{{ page.description | default: site.description }}">
+    {% seo %}
     <meta name="theme-color" content="#1f5eff">
     <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/site-icon.svg' | relative_url }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/site-icon.png' | relative_url }}">

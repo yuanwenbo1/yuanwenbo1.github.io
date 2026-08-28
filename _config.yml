@@ -6,6 +6,10 @@ lang: zh-CN
 timezone: Asia/Shanghai
 markdown: kramdown
 permalink: /posts/:year/:month/:day/:title/
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+logo: /assets/images/site-icon.png
 
 author:
   name: 测试开发笔记
