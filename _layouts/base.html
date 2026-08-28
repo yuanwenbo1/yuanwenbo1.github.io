@@ -49,15 +49,25 @@
       </div>
     </footer>
 
-    <details class="reward-float">
-      <summary class="reward-float__trigger" aria-label="打赏作者">
+    <div class="reward-float" data-reward-float>
+      <button
+        class="reward-float__trigger"
+        type="button"
+        aria-label="打开打赏面板"
+        aria-expanded="false"
+        aria-controls="reward-panel"
+        data-reward-trigger
+      >
         <span class="reward-float__icon" aria-hidden="true">赏</span>
         <span class="reward-float__label">
           <strong>打赏</strong>
           <small>微信支付</small>
         </span>
-      </summary>
-      <div class="reward-float__panel" role="dialog" aria-label="微信打赏">
+      </button>
+      <div class="reward-float__panel" id="reward-panel" role="dialog" aria-label="微信打赏" aria-hidden="true" data-reward-panel>
+        <button class="reward-float__close" type="button" aria-label="关闭打赏面板" data-reward-close>
+          <span aria-hidden="true">×</span>
+        </button>
         <p class="reward-float__title">微信打赏</p>
         <img
           src="{{ '/assets/images/wechat-reward.png' | relative_url }}"
@@ -68,6 +78,8 @@
         >
         <p class="reward-float__note">微信扫一扫，支持一下。</p>
       </div>
-    </details>
+    </div>
+
+    <script src="{{ '/assets/js/reward-float.js' | relative_url }}" defer></script>
   </body>
 </html>

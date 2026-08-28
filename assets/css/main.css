@@ -587,20 +587,13 @@ h3 {
   z-index: 40;
 }
 
-.reward-float > summary {
-  list-style: none;
-}
-
-.reward-float > summary::-webkit-details-marker {
-  display: none;
-}
-
 .reward-float__trigger {
   display: inline-flex;
   align-items: center;
   gap: 10px;
   min-height: 54px;
   padding: 8px 14px 8px 10px;
+  border: 0;
   border: 1px solid rgba(31, 94, 255, 0.18);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.95);
@@ -645,6 +638,7 @@ h3 {
 }
 
 .reward-float__panel {
+  display: none;
   position: absolute;
   right: 0;
   bottom: calc(100% + 12px);
@@ -657,11 +651,37 @@ h3 {
   text-align: center;
 }
 
+.reward-float.is-open .reward-float__panel {
+  display: block;
+}
+
 .reward-float__title {
   margin: 0 0 10px;
   color: var(--primary-dark);
   font-size: 15px;
   font-weight: 800;
+}
+
+.reward-float__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.reward-float__close:hover {
+  background: var(--primary);
+  color: #fff;
 }
 
 .reward-float__panel img {
@@ -677,11 +697,7 @@ h3 {
   font-size: 12px;
 }
 
-.reward-float:not([open]) .reward-float__panel {
-  display: none;
-}
-
-.reward-float[open] .reward-float__trigger {
+.reward-float.is-open .reward-float__trigger {
   border-color: rgba(31, 94, 255, 0.45);
 }
 
