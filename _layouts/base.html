@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ page.description | default: site.description }}">
+    <meta name="theme-color" content="#1f5eff">
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/site-icon.svg' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/site-icon.png' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   </head>
   <body>
@@ -45,5 +48,26 @@
         </div>
       </div>
     </footer>
+
+    <details class="reward-float">
+      <summary class="reward-float__trigger" aria-label="打赏作者">
+        <span class="reward-float__icon" aria-hidden="true">赏</span>
+        <span class="reward-float__label">
+          <strong>打赏</strong>
+          <small>微信支付</small>
+        </span>
+      </summary>
+      <div class="reward-float__panel" role="dialog" aria-label="微信打赏">
+        <p class="reward-float__title">微信打赏</p>
+        <img
+          src="{{ '/assets/images/wechat-reward.png' | relative_url }}"
+          alt="微信打赏二维码"
+          width="420"
+          height="601"
+          loading="lazy"
+        >
+        <p class="reward-float__note">微信扫一扫，支持一下。</p>
+      </div>
+    </details>
   </body>
 </html>
